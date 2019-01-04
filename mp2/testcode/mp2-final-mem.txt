@@ -1,0 +1,706 @@
+
+/tmp/tmp.ZDty4IsOBs/mp2-final.s.obj:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010060 <_start>:
+   10060:	00000097          	auipc	ra,0x0
+   10064:	26008093          	addi	ra,ra,608 # 102c0 <G60>
+   10068:	00000117          	auipc	sp,0x0
+   1006c:	35810113          	addi	sp,sp,856 # 103c0 <S60>
+   10070:	00000197          	auipc	gp,0x0
+   10074:	49018193          	addi	gp,gp,1168 # 10500 <B60>
+   10078:	00000417          	auipc	s0,0x0
+   1007c:	4b042403          	lw	s0,1200(s0) # 10528 <B74>
+   10080:	00000417          	auipc	s0,0x0
+   10084:	36c42403          	lw	s0,876(s0) # 103ec <S76>
+   10088:	00000397          	auipc	t2,0x0
+   1008c:	4983a383          	lw	t2,1176(t2) # 10520 <B70>
+   10090:	00000417          	auipc	s0,0x0
+   10094:	26842403          	lw	s0,616(s0) # 102f8 <G7C>
+   10098:	00000397          	auipc	t2,0x0
+   1009c:	2603a383          	lw	t2,608(t2) # 102f8 <G7C>
+   100a0:	00000397          	auipc	t2,0x0
+   100a4:	35c3a383          	lw	t2,860(t2) # 103fc <S7E>
+   100a8:	00000397          	auipc	t2,0x0
+   100ac:	4883a383          	lw	t2,1160(t2) # 10530 <B78>
+   100b0:	00000397          	auipc	t2,0x0
+   100b4:	4803a383          	lw	t2,1152(t2) # 10530 <B78>
+   100b8:	00000397          	auipc	t2,0x0
+   100bc:	4783a383          	lw	t2,1144(t2) # 10530 <B78>
+   100c0:	00000317          	auipc	t1,0x0
+   100c4:	44432303          	lw	t1,1092(t1) # 10504 <B62>
+   100c8:	00000297          	auipc	t0,0x0
+   100cc:	3042a283          	lw	t0,772(t0) # 103cc <S66>
+   100d0:	00512823          	sw	t0,16(sp)
+   100d4:	00000317          	auipc	t1,0x0
+   100d8:	43832303          	lw	t1,1080(t1) # 1050c <B66>
+   100dc:	00212a23          	sw	sp,20(sp)
+   100e0:	00212423          	sw	sp,8(sp)
+   100e4:	0030a023          	sw	gp,0(ra)
+   100e8:	00110293          	addi	t0,sp,1
+   100ec:	00512a23          	sw	t0,20(sp)
+   100f0:	00000097          	auipc	ra,0x0
+   100f4:	17008093          	addi	ra,ra,368 # 10260 <G30>
+   100f8:	00000463          	beqz	zero,10100 <MORE>
+   100fc:	00000013          	nop
+
+00010100 <MORE>:
+   10100:	00000117          	auipc	sp,0x0
+   10104:	26010113          	addi	sp,sp,608 # 10360 <S30>
+   10108:	00000197          	auipc	gp,0x0
+   1010c:	39818193          	addi	gp,gp,920 # 104a0 <B30>
+   10110:	0410a023          	sw	ra,64(ra)
+   10114:	04212223          	sw	sp,68(sp)
+   10118:	0431a423          	sw	gp,72(gp) # 11d88 <__global_pointer$+0x48>
+   1011c:	0430a823          	sw	gp,80(ra)
+   10120:	00000417          	auipc	s0,0x0
+   10124:	28442403          	lw	s0,644(s0) # 103a4 <S52>
+   10128:	00000317          	auipc	t1,0x0
+   1012c:	3cc32303          	lw	t1,972(t1) # 104f4 <B5A>
+   10130:	00000397          	auipc	t2,0x0
+   10134:	1783a383          	lw	t2,376(t2) # 102a8 <G54>
+   10138:	00000317          	auipc	t1,0x0
+   1013c:	25432303          	lw	t1,596(t1) # 1038c <S46>
+   10140:	00118293          	addi	t0,gp,1 # 11d41 <__global_pointer$+0x1>
+   10144:	00000397          	auipc	t2,0x0
+   10148:	3803a383          	lw	t2,896(t2) # 104c4 <B42>
+   1014c:	007303b3          	add	t2,t1,t2
+   10150:	00000317          	auipc	t1,0x0
+   10154:	13032303          	lw	t1,304(t1) # 10280 <G40>
+   10158:	007303b3          	add	t2,t1,t2
+   1015c:	0270a223          	sw	t2,36(ra)
+   10160:	00027213          	andi	tp,tp,0
+   10164:	00d20213          	addi	tp,tp,13 # d <_start-0x10053>
+   10168:	0070a023          	sw	t2,0(ra)
+   1016c:	00108293          	addi	t0,ra,1
+   10170:	00000297          	auipc	t0,0x0
+   10174:	0f02a283          	lw	t0,240(t0) # 10260 <G30>
+   10178:	0050aa23          	sw	t0,20(ra)
+   1017c:	00000263          	beqz	zero,10180 <LOOP>
+
+00010180 <LOOP>:
+   10180:	00000317          	auipc	t1,0x0
+   10184:	1e832303          	lw	t1,488(t1) # 10368 <S34>
+   10188:	00000297          	auipc	t0,0x0
+   1018c:	0dc2a283          	lw	t0,220(t0) # 10264 <G32>
+   10190:	00000397          	auipc	t2,0x0
+   10194:	0d03a383          	lw	t2,208(t2) # 10260 <G30>
+   10198:	00000397          	auipc	t2,0x0
+   1019c:	0d03a383          	lw	t2,208(t2) # 10268 <G34>
+   101a0:	00000297          	auipc	t0,0x0
+   101a4:	3182a283          	lw	t0,792(t0) # 104b8 <B3C>
+   101a8:	fff20213          	addi	tp,tp,-1
+   101ac:	fc404ae3          	bgtz	tp,10180 <LOOP>
+
+000101b0 <HALT>:
+   101b0:	00000063          	beqz	zero,101b0 <HALT>
+	...
+
+Disassembly of section .rodata:
+
+00010200 <G30-0x60>:
+	...
+
+00010260 <G30>:
+   10260:	600d                	c.lui	zero,0x3
+   10262:	600d                	c.lui	zero,0x3
+
+00010264 <G32>:
+   10264:	600d                	c.lui	zero,0x3
+   10266:	600d                	c.lui	zero,0x3
+
+00010268 <G34>:
+   10268:	600d                	c.lui	zero,0x3
+   1026a:	600d                	c.lui	zero,0x3
+
+0001026c <G36>:
+   1026c:	600d                	c.lui	zero,0x3
+   1026e:	600d                	c.lui	zero,0x3
+
+00010270 <G38>:
+   10270:	600d                	c.lui	zero,0x3
+   10272:	600d                	c.lui	zero,0x3
+
+00010274 <G3A>:
+   10274:	600d                	c.lui	zero,0x3
+   10276:	600d                	c.lui	zero,0x3
+
+00010278 <G3C>:
+   10278:	600d                	c.lui	zero,0x3
+   1027a:	600d                	c.lui	zero,0x3
+
+0001027c <G3E>:
+   1027c:	600d                	c.lui	zero,0x3
+   1027e:	600d                	c.lui	zero,0x3
+
+00010280 <G40>:
+   10280:	00c2                	slli	ra,ra,0x10
+   10282:	00c2                	slli	ra,ra,0x10
+
+00010284 <G42>:
+   10284:	0148                	addi	a0,sp,132
+   10286:	0148                	addi	a0,sp,132
+
+00010288 <G44>:
+   10288:	1122                	slli	sp,sp,0x28
+   1028a:	1122                	slli	sp,sp,0x28
+
+0001028c <G46>:
+   1028c:	3344                	fld	fs1,160(a4)
+   1028e:	3344                	fld	fs1,160(a4)
+
+00010290 <G48>:
+   10290:	5566                	lw	a0,120(sp)
+   10292:	5566                	lw	a0,120(sp)
+
+00010294 <G4A>:
+   10294:	7788                	flw	fa0,40(a5)
+   10296:	7788                	flw	fa0,40(a5)
+
+00010298 <G4C>:
+   10298:	99aa                	add	s3,s3,a0
+   1029a:	99aa                	add	s3,s3,a0
+
+0001029c <G4E>:
+   1029c:	bbcc                	fsd	fa1,176(a5)
+   1029e:	bbcc                	fsd	fa1,176(a5)
+
+000102a0 <G50>:
+   102a0:	600d                	c.lui	zero,0x3
+   102a2:	600d                	c.lui	zero,0x3
+
+000102a4 <G52>:
+   102a4:	600d                	c.lui	zero,0x3
+   102a6:	600d                	c.lui	zero,0x3
+
+000102a8 <G54>:
+   102a8:	600d                	c.lui	zero,0x3
+   102aa:	600d                	c.lui	zero,0x3
+
+000102ac <G56>:
+   102ac:	600d                	c.lui	zero,0x3
+   102ae:	600d                	c.lui	zero,0x3
+
+000102b0 <G58>:
+   102b0:	600d                	c.lui	zero,0x3
+   102b2:	600d                	c.lui	zero,0x3
+
+000102b4 <G5A>:
+   102b4:	600d                	c.lui	zero,0x3
+   102b6:	600d                	c.lui	zero,0x3
+
+000102b8 <G5C>:
+   102b8:	600d                	c.lui	zero,0x3
+   102ba:	600d                	c.lui	zero,0x3
+
+000102bc <G5E>:
+   102bc:	600d                	c.lui	zero,0x3
+   102be:	600d                	c.lui	zero,0x3
+
+000102c0 <G60>:
+   102c0:	666d                	lui	a2,0x1b
+   102c2:	666d                	lui	a2,0x1b
+
+000102c4 <G62>:
+   102c4:	677d                	lui	a4,0x1f
+   102c6:	677d                	lui	a4,0x1f
+
+000102c8 <G64>:
+   102c8:	688d                	lui	a7,0x3
+   102ca:	688d                	lui	a7,0x3
+
+000102cc <G66>:
+   102cc:	699d                	lui	s3,0x7
+   102ce:	699d                	lui	s3,0x7
+
+000102d0 <G68>:
+   102d0:	6aad                	lui	s5,0xb
+   102d2:	6aad                	lui	s5,0xb
+
+000102d4 <G6A>:
+   102d4:	6bbd                	lui	s7,0xf
+   102d6:	6bbd                	lui	s7,0xf
+
+000102d8 <G6C>:
+   102d8:	6ccd                	lui	s9,0x13
+   102da:	6ccd                	lui	s9,0x13
+
+000102dc <G6E>:
+   102dc:	6ddd                	lui	s11,0x17
+   102de:	6ddd                	lui	s11,0x17
+
+000102e0 <G70>:
+   102e0:	600d                	c.lui	zero,0x3
+   102e2:	600d                	c.lui	zero,0x3
+
+000102e4 <G72>:
+   102e4:	600d                	c.lui	zero,0x3
+   102e6:	600d                	c.lui	zero,0x3
+
+000102e8 <G74>:
+   102e8:	600d                	c.lui	zero,0x3
+   102ea:	600d                	c.lui	zero,0x3
+
+000102ec <G76>:
+   102ec:	600d                	c.lui	zero,0x3
+   102ee:	600d                	c.lui	zero,0x3
+
+000102f0 <G78>:
+   102f0:	600d                	c.lui	zero,0x3
+   102f2:	600d                	c.lui	zero,0x3
+
+000102f4 <G7A>:
+   102f4:	600d                	c.lui	zero,0x3
+   102f6:	600d                	c.lui	zero,0x3
+
+000102f8 <G7C>:
+   102f8:	600d                	c.lui	zero,0x3
+   102fa:	600d                	c.lui	zero,0x3
+
+000102fc <G7E>:
+   102fc:	600d                	c.lui	zero,0x3
+   102fe:	600d                	c.lui	zero,0x3
+	...
+
+00010360 <S30>:
+   10360:	5220                	lw	s0,96(a2)
+   10362:	5220                	lw	s0,96(a2)
+
+00010364 <S32>:
+   10364:	5220                	lw	s0,96(a2)
+   10366:	5220                	lw	s0,96(a2)
+
+00010368 <S34>:
+   10368:	5220                	lw	s0,96(a2)
+   1036a:	5220                	lw	s0,96(a2)
+
+0001036c <S36>:
+   1036c:	5220                	lw	s0,96(a2)
+   1036e:	5220                	lw	s0,96(a2)
+
+00010370 <S38>:
+   10370:	5220                	lw	s0,96(a2)
+   10372:	5220                	lw	s0,96(a2)
+
+00010374 <S3A>:
+   10374:	5220                	lw	s0,96(a2)
+   10376:	5220                	lw	s0,96(a2)
+
+00010378 <S3C>:
+   10378:	5220                	lw	s0,96(a2)
+   1037a:	5220                	lw	s0,96(a2)
+
+0001037c <S3E>:
+   1037c:	5220                	lw	s0,96(a2)
+   1037e:	5220                	lw	s0,96(a2)
+
+00010380 <S40>:
+   10380:	5220                	lw	s0,96(a2)
+   10382:	5220                	lw	s0,96(a2)
+
+00010384 <S42>:
+   10384:	5220                	lw	s0,96(a2)
+   10386:	5220                	lw	s0,96(a2)
+
+00010388 <S44>:
+   10388:	5220                	lw	s0,96(a2)
+   1038a:	5220                	lw	s0,96(a2)
+
+0001038c <S46>:
+   1038c:	5220                	lw	s0,96(a2)
+   1038e:	5220                	lw	s0,96(a2)
+
+00010390 <S48>:
+   10390:	5220                	lw	s0,96(a2)
+   10392:	5220                	lw	s0,96(a2)
+
+00010394 <S4A>:
+   10394:	5220                	lw	s0,96(a2)
+   10396:	5220                	lw	s0,96(a2)
+
+00010398 <S4C>:
+   10398:	5220                	lw	s0,96(a2)
+   1039a:	5220                	lw	s0,96(a2)
+
+0001039c <S4E>:
+   1039c:	5220                	lw	s0,96(a2)
+   1039e:	5220                	lw	s0,96(a2)
+
+000103a0 <S50>:
+   103a0:	5220                	lw	s0,96(a2)
+   103a2:	5220                	lw	s0,96(a2)
+
+000103a4 <S52>:
+   103a4:	5220                	lw	s0,96(a2)
+   103a6:	5220                	lw	s0,96(a2)
+
+000103a8 <S54>:
+   103a8:	5220                	lw	s0,96(a2)
+   103aa:	5220                	lw	s0,96(a2)
+
+000103ac <S56>:
+   103ac:	5220                	lw	s0,96(a2)
+   103ae:	5220                	lw	s0,96(a2)
+
+000103b0 <S58>:
+   103b0:	5220                	lw	s0,96(a2)
+   103b2:	5220                	lw	s0,96(a2)
+
+000103b4 <S5A>:
+   103b4:	5220                	lw	s0,96(a2)
+   103b6:	5220                	lw	s0,96(a2)
+
+000103b8 <S5C>:
+   103b8:	5220                	lw	s0,96(a2)
+   103ba:	5220                	lw	s0,96(a2)
+
+000103bc <S5E>:
+   103bc:	5220                	lw	s0,96(a2)
+   103be:	5220                	lw	s0,96(a2)
+
+000103c0 <S60>:
+   103c0:	5aa0                	lw	s0,112(a3)
+   103c2:	5aa0                	lw	s0,112(a3)
+
+000103c4 <S62>:
+   103c4:	5bb0                	lw	a2,112(a5)
+   103c6:	5bb0                	lw	a2,112(a5)
+
+000103c8 <S64>:
+   103c8:	5cc0                	lw	s0,60(s1)
+   103ca:	5cc0                	lw	s0,60(s1)
+
+000103cc <S66>:
+   103cc:	5dd0                	lw	a2,60(a1)
+   103ce:	5dd0                	lw	a2,60(a1)
+
+000103d0 <S68>:
+   103d0:	5ee0                	lw	s0,124(a3)
+   103d2:	5ee0                	lw	s0,124(a3)
+
+000103d4 <S6A>:
+   103d4:	5ff0                	lw	a2,124(a5)
+   103d6:	5ff0                	lw	a2,124(a5)
+
+000103d8 <S6C>:
+   103d8:	5110                	lw	a2,32(a0)
+   103da:	5110                	lw	a2,32(a0)
+
+000103dc <S6E>:
+   103dc:	5220                	lw	s0,96(a2)
+   103de:	5220                	lw	s0,96(a2)
+
+000103e0 <S70>:
+   103e0:	5220                	lw	s0,96(a2)
+   103e2:	5220                	lw	s0,96(a2)
+
+000103e4 <S72>:
+   103e4:	5220                	lw	s0,96(a2)
+   103e6:	5220                	lw	s0,96(a2)
+
+000103e8 <S74>:
+   103e8:	5220                	lw	s0,96(a2)
+   103ea:	5220                	lw	s0,96(a2)
+
+000103ec <S76>:
+   103ec:	5220                	lw	s0,96(a2)
+   103ee:	5220                	lw	s0,96(a2)
+
+000103f0 <S78>:
+   103f0:	5220                	lw	s0,96(a2)
+   103f2:	5220                	lw	s0,96(a2)
+
+000103f4 <S7A>:
+   103f4:	5220                	lw	s0,96(a2)
+   103f6:	5220                	lw	s0,96(a2)
+
+000103f8 <S7C>:
+   103f8:	5220                	lw	s0,96(a2)
+   103fa:	5220                	lw	s0,96(a2)
+
+000103fc <S7E>:
+   103fc:	5220                	lw	s0,96(a2)
+   103fe:	5220                	lw	s0,96(a2)
+	...
+
+00010460 <B10>:
+   10460:	badd                	j	fe56 <_start-0x20a>
+   10462:	badd                	j	fe58 <_start-0x208>
+
+00010464 <B12>:
+   10464:	badd                	j	fe5a <_start-0x206>
+   10466:	badd                	j	fe5c <_start-0x204>
+
+00010468 <B14>:
+   10468:	b22d                	j	fd92 <_start-0x2ce>
+   1046a:	b22d                	j	fd94 <_start-0x2cc>
+
+0001046c <B16>:
+   1046c:	b33d                	j	1019a <LOOP+0x1a>
+   1046e:	b33d                	j	1019c <LOOP+0x1c>
+
+00010470 <B18>:
+   10470:	b44d                	j	ff12 <_start-0x14e>
+   10472:	b44d                	j	ff14 <_start-0x14c>
+
+00010474 <B1A>:
+   10474:	b55d                	j	1031a <G7E+0x1e>
+   10476:	b55d                	j	1031c <G7E+0x20>
+
+00010478 <B1C>:
+   10478:	b66d                	j	10022 <_start-0x3e>
+   1047a:	b66d                	j	10024 <_start-0x3c>
+
+0001047c <B1E>:
+   1047c:	b77d                	j	1042a <S7E+0x2e>
+   1047e:	b77d                	j	1042c <S7E+0x30>
+
+00010480 <B20>:
+   10480:	b88d                	j	fcf2 <_start-0x36e>
+   10482:	b88d                	j	fcf4 <_start-0x36c>
+
+00010484 <B22>:
+   10484:	b99d                	j	100fa <_start+0x9a>
+   10486:	b99d                	j	100fc <_start+0x9c>
+
+00010488 <B24>:
+   10488:	baad                	j	fe02 <_start-0x25e>
+   1048a:	baad                	j	fe04 <_start-0x25c>
+
+0001048c <B26>:
+   1048c:	bbbd                	j	1020a <HALT+0x5a>
+   1048e:	bbbd                	j	1020c <HALT+0x5c>
+
+00010490 <B28>:
+   10490:	bccd                	j	ff82 <_start-0xde>
+   10492:	bccd                	j	ff84 <_start-0xdc>
+
+00010494 <B2A>:
+   10494:	bddd                	j	1038a <S44+0x2>
+   10496:	bddd                	j	1038c <S46>
+
+00010498 <B2C>:
+   10498:	beed                	j	10092 <_start+0x32>
+   1049a:	beed                	j	10094 <_start+0x34>
+
+0001049c <B2E>:
+   1049c:	bffd                	j	1049a <B2C+0x2>
+   1049e:	bffd                	j	1049c <B2E>
+
+000104a0 <B30>:
+   104a0:	baad                	j	fe1a <_start-0x246>
+   104a2:	baad                	j	fe1c <_start-0x244>
+
+000104a4 <B32>:
+   104a4:	baad                	j	fe1e <_start-0x242>
+   104a6:	baad                	j	fe20 <_start-0x240>
+
+000104a8 <B34>:
+   104a8:	baad                	j	fe22 <_start-0x23e>
+   104aa:	baad                	j	fe24 <_start-0x23c>
+
+000104ac <B36>:
+   104ac:	baad                	j	fe26 <_start-0x23a>
+   104ae:	baad                	j	fe28 <_start-0x238>
+
+000104b0 <B38>:
+   104b0:	baad                	j	fe2a <_start-0x236>
+   104b2:	baad                	j	fe2c <_start-0x234>
+
+000104b4 <B3A>:
+   104b4:	baad                	j	fe2e <_start-0x232>
+   104b6:	baad                	j	fe30 <_start-0x230>
+
+000104b8 <B3C>:
+   104b8:	baad                	j	fe32 <_start-0x22e>
+   104ba:	baad                	j	fe34 <_start-0x22c>
+
+000104bc <B3E>:
+   104bc:	baad                	j	fe36 <_start-0x22a>
+   104be:	baad                	j	fe38 <_start-0x228>
+
+000104c0 <B40>:
+   104c0:	baad                	j	fe3a <_start-0x226>
+   104c2:	baad                	j	fe3c <_start-0x224>
+
+000104c4 <B42>:
+   104c4:	baad                	j	fe3e <_start-0x222>
+   104c6:	baad                	j	fe40 <_start-0x220>
+
+000104c8 <B44>:
+   104c8:	baad                	j	fe42 <_start-0x21e>
+   104ca:	baad                	j	fe44 <_start-0x21c>
+
+000104cc <B46>:
+   104cc:	baad                	j	fe46 <_start-0x21a>
+   104ce:	baad                	j	fe48 <_start-0x218>
+
+000104d0 <B48>:
+   104d0:	baad                	j	fe4a <_start-0x216>
+   104d2:	baad                	j	fe4c <_start-0x214>
+
+000104d4 <B4A>:
+   104d4:	baad                	j	fe4e <_start-0x212>
+   104d6:	baad                	j	fe50 <_start-0x210>
+
+000104d8 <B4C>:
+   104d8:	baad                	j	fe52 <_start-0x20e>
+   104da:	baad                	j	fe54 <_start-0x20c>
+
+000104dc <B4E>:
+   104dc:	baad                	j	fe56 <_start-0x20a>
+   104de:	baad                	j	fe58 <_start-0x208>
+
+000104e0 <B50>:
+   104e0:	baad                	j	fe5a <_start-0x206>
+   104e2:	baad                	j	fe5c <_start-0x204>
+
+000104e4 <B52>:
+   104e4:	baad                	j	fe5e <_start-0x202>
+   104e6:	baad                	j	fe60 <_start-0x200>
+
+000104e8 <B54>:
+   104e8:	baad                	j	fe62 <_start-0x1fe>
+   104ea:	baad                	j	fe64 <_start-0x1fc>
+
+000104ec <B56>:
+   104ec:	baad                	j	fe66 <_start-0x1fa>
+   104ee:	baad                	j	fe68 <_start-0x1f8>
+
+000104f0 <B58>:
+   104f0:	baad                	j	fe6a <_start-0x1f6>
+   104f2:	baad                	j	fe6c <_start-0x1f4>
+
+000104f4 <B5A>:
+   104f4:	baad                	j	fe6e <_start-0x1f2>
+   104f6:	baad                	j	fe70 <_start-0x1f0>
+
+000104f8 <B5C>:
+   104f8:	baad                	j	fe72 <_start-0x1ee>
+   104fa:	baad                	j	fe74 <_start-0x1ec>
+
+000104fc <B5E>:
+   104fc:	baad                	j	fe76 <_start-0x1ea>
+   104fe:	baad                	j	fe78 <_start-0x1e8>
+
+00010500 <B60>:
+   10500:	b88d                	j	fd72 <_start-0x2ee>
+   10502:	b88d                	j	fd74 <_start-0x2ec>
+
+00010504 <B62>:
+   10504:	b99d                	j	1017a <MORE+0x7a>
+   10506:	b99d                	j	1017c <MORE+0x7c>
+
+00010508 <B64>:
+   10508:	baad                	j	fe82 <_start-0x1de>
+   1050a:	baad                	j	fe84 <_start-0x1dc>
+
+0001050c <B66>:
+   1050c:	bbbd                	j	1028a <G44+0x2>
+   1050e:	bbbd                	j	1028c <G46>
+
+00010510 <B68>:
+   10510:	bccd                	j	10002 <_start-0x5e>
+   10512:	bccd                	j	10004 <_start-0x5c>
+
+00010514 <B6A>:
+   10514:	bddd                	j	1040a <S7E+0xe>
+   10516:	bddd                	j	1040c <S7E+0x10>
+
+00010518 <B6C>:
+   10518:	beed                	j	10112 <MORE+0x12>
+   1051a:	beed                	j	10114 <MORE+0x14>
+
+0001051c <B6E>:
+   1051c:	bffd                	j	1051a <B6C+0x2>
+   1051e:	bffd                	j	1051c <B6E>
+
+00010520 <B70>:
+   10520:	badd                	j	ff16 <_start-0x14a>
+   10522:	badd                	j	ff18 <_start-0x148>
+
+00010524 <B72>:
+   10524:	badd                	j	ff1a <_start-0x146>
+   10526:	badd                	j	ff1c <_start-0x144>
+
+00010528 <B74>:
+   10528:	badd                	j	ff1e <_start-0x142>
+   1052a:	badd                	j	ff20 <_start-0x140>
+
+0001052c <B76>:
+   1052c:	badd                	j	ff22 <_start-0x13e>
+   1052e:	badd                	j	ff24 <_start-0x13c>
+
+00010530 <B78>:
+   10530:	badd                	j	ff26 <_start-0x13a>
+   10532:	badd                	j	ff28 <_start-0x138>
+
+00010534 <B7A>:
+   10534:	badd                	j	ff2a <_start-0x136>
+   10536:	badd                	j	ff2c <_start-0x134>
+
+00010538 <B7C>:
+   10538:	badd                	j	ff2e <_start-0x132>
+   1053a:	badd                	j	ff30 <_start-0x130>
+
+0001053c <B7E>:
+   1053c:	badd                	j	ff32 <_start-0x12e>
+   1053e:	badd                	j	ff34 <_start-0x12c>
+0000000 0097 0000 8093 2600 0117 0000 0113 3581
+0000010 0197 0000 8193 4901 0417 0000 2403 4b04
+0000020 0417 0000 2403 36c4 0397 0000 a383 4983
+0000030 0417 0000 2403 2684 0397 0000 a383 2603
+0000040 0397 0000 a383 35c3 0397 0000 a383 4883
+0000050 0397 0000 a383 4803 0397 0000 a383 4783
+0000060 0317 0000 2303 4443 0297 0000 a283 3042
+0000070 2823 0051 0317 0000 2303 4383 2a23 0021
+0000080 2423 0021 a023 0030 0293 0011 2a23 0051
+0000090 0097 0000 8093 1700 0463 0000 0013 0000
+00000a0 0117 0000 0113 2601 0197 0000 8193 3981
+00000b0 a023 0410 2223 0421 a423 0431 a823 0430
+00000c0 0417 0000 2403 2844 0317 0000 2303 3cc3
+00000d0 0397 0000 a383 1783 0317 0000 2303 2543
+00000e0 8293 0011 0397 0000 a383 3803 03b3 0073
+00000f0 0317 0000 2303 1303 03b3 0073 a223 0270
+0000100 7213 0002 0213 00d2 a023 0070 8293 0010
+0000110 0297 0000 a283 0f02 aa23 0050 0263 0000
+0000120 0317 0000 2303 1e83 0297 0000 a283 0dc2
+0000130 0397 0000 a383 0d03 0397 0000 a383 0d03
+0000140 0297 0000 a283 3182 0213 fff2 4ae3 fc40
+0000150 0063 0000 0000 0000 0000 0000 0000 0000
+0000160 0000 0000 0000 0000 0000 0000 0000 0000
+*
+0000200 600d 600d 600d 600d 600d 600d 600d 600d
+*
+0000220 00c2 00c2 0148 0148 1122 1122 3344 3344
+0000230 5566 5566 7788 7788 99aa 99aa bbcc bbcc
+0000240 600d 600d 600d 600d 600d 600d 600d 600d
+*
+0000260 666d 666d 677d 677d 688d 688d 699d 699d
+0000270 6aad 6aad 6bbd 6bbd 6ccd 6ccd 6ddd 6ddd
+0000280 600d 600d 600d 600d 600d 600d 600d 600d
+*
+00002a0 0000 0000 0000 0000 0000 0000 0000 0000
+*
+0000300 5220 5220 5220 5220 5220 5220 5220 5220
+*
+0000360 5aa0 5aa0 5bb0 5bb0 5cc0 5cc0 5dd0 5dd0
+0000370 5ee0 5ee0 5ff0 5ff0 5110 5110 5220 5220
+0000380 5220 5220 5220 5220 5220 5220 5220 5220
+*
+00003a0 0000 0000 0000 0000 0000 0000 0000 0000
+*
+0000400 badd badd badd badd b22d b22d b33d b33d
+0000410 b44d b44d b55d b55d b66d b66d b77d b77d
+0000420 b88d b88d b99d b99d baad baad bbbd bbbd
+0000430 bccd bccd bddd bddd beed beed bffd bffd
+0000440 baad baad baad baad baad baad baad baad
+*
+00004a0 b88d b88d b99d b99d baad baad bbbd bbbd
+00004b0 bccd bccd bddd bddd beed beed bffd bffd
+00004c0 badd badd badd badd badd badd badd badd
+*
+00004e0
+Target file /home/jlbrown5/ece411/mp0/simulation/modelsim/memory.lst exists.
